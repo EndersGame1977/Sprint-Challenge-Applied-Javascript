@@ -32,20 +32,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    Document - A file that contains all the DOM objects.
+    Object - HTML tags like <body> are objects in the DOM.
+    Model - Is the way the objects are layed out.
+
+    The DOM can add effect the page without changing the HTML.
+
+    const example = document.querySelector(".exampleClass"); //selects the class ".exampleClass" and assigns it to the const "example".
+    example.addEventListener('click', () => {
+        example.classList.add("hideElement");
+    }); //adds a "hideElement" class to the element that has the ".exampleClass" class in it.
+
 2. What is an event?
+
+    It is the "cause" in the cause and effect. Click, mouseover, hover and many more are example of an event.
 
 3. What is an event listener?
 
+    Meathod used to listent for events. The meathod used is addEventListener("event", function).  
+
 4. Why would we convert a NodeList into an Array?
+
+    It's nice that the .forEach works in a NodeList, but .map and .reduce do not work with a NodeList and would need to be converted to an array using Array.from() method.
 
 5. What is a component?
 
+    A component is a small, potentially re-usable set of logic.
+
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Fork the project into your GitHub user account
+* [x] Clone the forked project into a directory on your machine
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
